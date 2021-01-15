@@ -19,7 +19,6 @@ class ChatsController < ApplicationController
 
   # GET /chats/new
   def create
-    @chats =Chat.all
     @chat = Chat.new(chat_params)
 
     respond_to do |format|
